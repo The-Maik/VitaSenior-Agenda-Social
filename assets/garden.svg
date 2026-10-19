@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" fill="none">
+<rect x="15" y="10" width="530" height="440" rx="180" fill="#e8ecdb"/>
+<circle cx="402" cy="110" r="57" fill="#edc57a"/><path d="M18 343c116-62 199-37 276-65s174-17 252 30v135H18Z" fill="#d5ddbf"/>
+<path d="M293 448c-33-59-35-76 30-115s42-53-7-69" stroke="#f8f3e7" stroke-width="49"/>
+<path d="M96 325V130m0 112c-54-5-65-47-63-77 37 5 61 29 63 62m0-17c44-3 66-33 68-68-39 3-64 27-68 54m0-36c-25-16-32-41-23-66 21 10 30 31 23 53" stroke="#75987b" stroke-width="5" fill="#91aa87"/>
+<path d="M443 332v-86m0 56c-27-6-44-26-42-51 24 3 40 22 42 42m0-11c29-3 41-21 43-43-26 3-41 17-43 34" fill="#75987b" stroke="#75987b" stroke-width="4"/>
+<path d="M132 305h250M149 330v33m212-33v33" stroke="#755b43" stroke-width="10" stroke-linecap="round"/>
+<path d="M138 279h237v47H138z" fill="#ba8e64"/><path d="M142 297h228" stroke="#a87b55" stroke-width="3"/>
+<!-- Illustration originale : silhouettes de deux adultes discutant, sans démonstration de mouvement. -->
+<path d="m193 282 6 61-18 33m51-93 10 52 15 27" stroke="#4c6560" stroke-width="20" stroke-linecap="round"/>
+<path d="m166 221 9-48c7-27 52-25 63 3l18 94c-26 18-56 18-81 3Z" fill="#d69a62"/>
+<path d="m181 193-16 51 47 13m21-65 22 33 37-9" stroke="#d69a62" stroke-width="17" stroke-linecap="round"/>
+<path d="m281 216 16-4m-86 45 13 1" stroke="#ae795f" stroke-width="12" stroke-linecap="round"/>
+<path d="M201 135v27" stroke="#ae795f" stroke-width="18"/>
+<ellipse cx="204" cy="124" rx="22" ry="29" fill="#c58e6e"/>
+<path d="M182 127c-14-43 15-51 35-36 16 3 18 18 10 28-15 1-24-8-30-16 0 12-7 16-15 24Z" fill="#f7f4ea"/>
+<path d="m299 280-9 57 13 34m31-91 5 53 25 24" stroke="#bd9d76" stroke-width="20" stroke-linecap="round"/>
+<path d="M290 174c14-23 47-22 61 0l9 110c-21 10-48 10-74-2Z" fill="#32695d"/>
+<path d="m300 187-14 49-28-4m79-48 22 45-28 31" stroke="#32695d" stroke-width="17" stroke-linecap="round"/>
+<path d="m258 232-12-4m84 32-11 8" stroke="#d4a37f" stroke-width="12" stroke-linecap="round"/>
+<path d="M322 135v25" stroke="#d4a37f" stroke-width="18"/>
+<ellipse cx="320" cy="123" rx="22" ry="29" fill="#d4a37f"/>
+<path d="M297 119c-6-20 6-36 25-32 18-4 30 20 20 37l-8-23c-10 8-19 8-33 5Z" fill="#e6e7dc"/>
+<path d="m300 118 14 1m6 0 14-1m-20 1h6" stroke="#354e46" stroke-width="2"/>
+<path d="m174 380 15 2m63-18 15 2m30 8 17 2m45-15 17 1" stroke="#293f3c" stroke-width="12" stroke-linecap="round"/>
+<path d="M475 151c4-8 10-9 16-2m-13-36c7-4 13-1 15 6" stroke="#75987b" stroke-width="3" stroke-linecap="round"/>
+<circle cx="125" cy="376" r="5" fill="#d6a45b"/><circle cx="400" cy="367" r="4" fill="#d6a45b"/>
+</svg>

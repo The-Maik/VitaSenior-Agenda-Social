@@ -1,0 +1,15 @@
+137.131.249.162.sslip.io {
+  encode gzip
+  header {
+    X-Content-Type-Options nosniff
+    Referrer-Policy no-referrer
+    X-Frame-Options DENY
+  }
+  handle /vitasenior/* {
+    reverse_proxy 127.0.0.1:8080
+  }
+  handle {
+    root * /srv/vitasenior/site
+    file_server
+  }
+}

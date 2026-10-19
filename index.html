@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Informação clara sobre movimento, equilíbrio e bem-estar na maturidade. Um projeto acadêmico, sem cadastro ou avaliação de saúde."
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#174f46" />
+    <title>VitaSênior — Bem-estar no seu ritmo</title>
+    <link rel="icon" href="assets/leaf.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="academic-bar" role="region" aria-label="Sobre esta versão">
+      Um projeto acadêmico para aprender e cuidar de si.
+    </div>
+    <header class="site-header wrap">
+      <a class="brand" href="./" aria-label="VitaSênior, início"
+        ><img src="assets/leaf.svg" width="38" height="38" alt="" />Vita<span
+          >Sênior</span
+        ></a
+      >
+      <nav aria-label="Navegação principal">
+        <a href="#biblioteca">Explorar conteúdos</a
+        ><a href="#sobre">O projeto</a>
+      </nav>
+      <button
+        class="button button-outline accessibility-trigger"
+        id="accessibility-open"
+        type="button"
+        hidden
+      >
+        <span aria-hidden="true">Aa</span> Acessibilidade
+      </button>
+    </header>
+    <main id="conteudo">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="small-line"></span> CADA FASE, NOVAS POSSIBILIDADES
+          </p>
+          <h1 id="hero-title">Bem-estar<br />no <em>seu ritmo.</em></h1>
+          <p class="hero-description">
+            Informação para viver a maturidade com mais autonomia. Explore,
+            aprenda e descubra pequenas formas de cuidar de você.
+          </p>
+          <a class="button button-primary" href="#biblioteca"
+            >Explorar a biblioteca <span aria-hidden="true">↗</span></a
+          >
+          <p class="hero-note">
+            <span aria-hidden="true">✓</span> Sem cadastro. Com respeito ao seu
+            tempo.
+          </p>
+        </div>
+        <div class="hero-art">
+          <img
+            src="assets/garden.svg"
+            width="560"
+            height="460"
+            alt="Ilustração de duas pessoas idosas conversando em um jardim."
+          />
+          <div class="art-caption">
+            <span class="caption-icon" aria-hidden="true">✦</span>
+            <div>
+              Aprender também é cuidar.<small>Um passo de cada vez.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="notice wrap">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p>
+          <strong>Conhecimento para o dia a dia.</strong> Este material é
+          educativo. Não realiza avaliação de saúde nem substitui acompanhamento
+          profissional.
+        </p>
+        <a href="termos.html"
+          >Entenda os limites <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <div class="notice wrap">
+        <span class="notice-icon" aria-hidden="true">↓</span>
+        <p>
+          <strong>Atividades educativas.</strong> Consulte a agenda e faça sua
+          inscrição pelo aplicativo Android.
+        </p>
+        <a href="downloads/vitasenior.apk" download
+          >Baixar aplicativo <span aria-hidden="true">↗</span></a
+        >
+      </div>
+      <section
+        class="library wrap section-space"
+        id="biblioteca"
+        aria-labelledby="library-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SUA BIBLIOTECA DE BEM-ESTAR</p>
+            <h2 id="library-title">Por onde vamos começar?</h2>
+            <p>Escolha um assunto. A leitura é no seu tempo.</p>
+          </div>
+          <span class="editorial-tag">Conteúdo com referências</span>
+        </div>
+        <div class="library-controls" id="library-controls" hidden>
+          <div class="filters" role="group" aria-label="Filtrar por assunto">
+            <button
+              type="button"
+              class="filter"
+              data-category="todos"
+              aria-pressed="true"
+            >
+              Todos
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-category="movimento"
+              aria-pressed="false"
+            >
+              Movimento
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-category="equilibrio"
+              aria-pressed="false"
+            >
+              Equilíbrio
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-category="respiracao"
+              aria-pressed="false"
+            >
+              Respiração e cuidado
+            </button>
+          </div>
+          <div class="search-field">
+            <label class="sr-only" for="search">Buscar conteúdo</label
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="Buscar um assunto"
+              maxlength="100"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="library-meta" id="library-meta" hidden>
+          <p
+            id="result-count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+          <button
+            type="button"
+            class="text-button"
+            id="saved-filter"
+            aria-pressed="false"
+          >
+            Ver meus favoritos <span id="saved-count">(0)</span>
+          </button>
+        </div>
+        <div class="cards-grid" id="cards-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>Nenhum conteúdo por aqui.</h3>
+          <p id="empty-description">
+            Tente outro assunto ou uma palavra diferente.
+          </p>
+          <button
+            type="button"
+            class="button button-outline"
+            id="clear-filters"
+          >
+            Mostrar todos os conteúdos
+          </button>
+        </div>
+        <div id="library-fallback">
+          <div class="notice">
+            <p>
+              Ative o JavaScript para usar a biblioteca interativa. Você também
+              pode consultar as <a href="fontes.html">fontes de leitura</a>, os
+              <a href="termos.html">limites de uso</a> e as informações de
+              <a href="privacidade.html">privacidade</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="support wrap" aria-label="Seu espaço de leitura">
+        <div class="reading-card">
+          <p class="eyebrow">PEQUENAS DESCOBERTAS</p>
+          <h2>Cada leitura conta.</h2>
+          <p>
+            Guarde uma ideia e leve suas dúvidas para uma conversa com um
+            profissional de saúde.
+          </p>
+          <div class="reading-progress">
+            <progress
+              id="reading-progress"
+              value="0"
+              max="6"
+              aria-label="Conteúdos marcados como lidos"
+            ></progress
+            ><span id="reading-count">0 de 6 conteúdos lidos nesta visita</span>
+          </div>
+          <p class="fine-print">
+            Favoritos e leituras ficam apenas nesta página e são apagados ao
+            recarregar ou sair.
+          </p>
+        </div>
+        <div class="pause-card" id="pause-card" hidden>
+          <div class="pause-heading">
+            <p class="eyebrow">UM TEMPO PARA VOCÊ</p>
+            <span aria-hidden="true">◷</span>
+          </div>
+          <h2>Que tal uma pausa na leitura?</h2>
+          <p>Escolha um tempo para descansar da tela.</p>
+          <div class="timer-row">
+            <label for="pause-duration">Duração</label
+            ><select id="pause-duration">
+              <option value="60">1 minuto</option>
+              <option value="120">2 minutos</option>
+              <option value="300">5 minutos</option></select
+            ><output
+              id="timer-display"
+              role="timer"
+              aria-live="off"
+              aria-label="Tempo restante"
+              >01:00</output
+            >
+          </div>
+          <div class="timer-actions">
+            <button
+              type="button"
+              class="button button-primary"
+              id="timer-toggle"
+            >
+              Iniciar pausa</button
+            ><button type="button" class="text-button" id="timer-reset">
+              Reiniciar
+            </button>
+          </div>
+          <p class="fine-print" id="timer-status" role="status">
+            O tempo é livre; não orienta exercícios ou respiração.
+          </p>
+        </div>
+      </section>
+      <section
+        class="about wrap section-space"
+        id="sobre"
+        aria-labelledby="about-title"
+      >
+        <div>
+          <p class="eyebrow">TECNOLOGIA COM PROPÓSITO</p>
+          <h2 id="about-title">Mais clareza.<br />Mais autonomia.</h2>
+        </div>
+        <div>
+          <p>
+            O VitaSênior nasceu como um projeto universitário de impacto social.
+            Esta versão reúne informação sobre bem-estar em uma experiência
+            simples, acolhedora e acessível.
+          </p>
+          <p>
+            Você escolhe o que ler. Não pedimos diagnósticos, não avaliamos sua
+            capacidade física e não montamos tratamentos.
+          </p>
+          <a class="text-link" href="fontes.html"
+            >Conheça nossas referências <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div>
+          <a class="brand" href="./"
+            ><img
+              src="assets/leaf.svg"
+              width="32"
+              height="32"
+              alt=""
+            />Vita<span>Sênior</span></a
+          >
+          <p>Bem-estar no seu ritmo.</p>
+        </div>
+        <nav aria-label="Informações do projeto">
+          <a href="privacidade.html">Privacidade</a
+          ><a href="termos.html">Termos e limites de uso</a
+          ><a href="fontes.html">Fontes de leitura</a
+          ><a href="/vitasenior/admin/">Área administrativa</a>
+        </nav>
+        <p class="footer-note">
+          Projeto acadêmico · Brasil<br />Biblioteca educativa e gestão de atividades
+        </p>
+      </div>
+    </footer>
+    <dialog id="article-dialog" aria-labelledby="article-title">
+      <div class="dialog-top">
+        <span class="eyebrow" id="article-category"></span
+        ><button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Fechar conteúdo"
+        >
+          ×
+        </button>
+      </div>
+      <div id="article-body"></div>
+      <div class="dialog-actions">
+        <button type="button" class="button button-primary" id="mark-read">
+          Marcar como lido</button
+        ><button
+          type="button"
+          class="button button-outline"
+          id="bookmark-article"
+          aria-pressed="false"
+        >
+          Favoritar
+        </button>
+      </div>
+      <p id="article-status" class="fine-print" role="status"></p>
+    </dialog>
+    <dialog id="accessibility-dialog" aria-labelledby="accessibility-title">
+      <div class="dialog-top">
+        <h2 id="accessibility-title">Do seu jeito</h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-close
+          aria-label="Fechar acessibilidade"
+        >
+          ×
+        </button>
+      </div>
+      <p>Ajuste a leitura para ficar mais confortável.</p>
+      <fieldset>
+        <legend>Tamanho do texto</legend>
+        <div class="option-row">
+          <label
+            ><input type="radio" name="font-size" value="normal" checked />
+            Padrão</label
+          ><label
+            ><input type="radio" name="font-size" value="large" />
+            Ampliado</label
+          >
+        </div>
+      </fieldset>
+      <label class="checkbox-label"
+        ><input type="checkbox" id="high-contrast" /> Usar alto contraste</label
+      >
+      <p class="fine-print">
+        As opções valem nesta visita. Você também pode ampliar a página pelo
+        navegador.
+      </p>
+      <hr />
+      <h3>Recomeçar esta visita</h3>
+      <p>Apague os favoritos e as marcações de leitura desta página.</p>
+      <button class="button button-outline" id="clear-session" type="button">
+        Limpar minhas marcações
+      </button>
+      <p id="clear-status" role="status" class="fine-print"></p>
+      <a class="text-link" href="privacidade.html"
+        >Como funciona a privacidade</a
+      >
+    </dialog>
+  </body>
+</html>

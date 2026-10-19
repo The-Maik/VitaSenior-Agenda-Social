@@ -1,0 +1,4 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="6.0">
+  <display-name>VitaSênior</display-name>
+  <session-config><cookie-config><http-only>true</http-only><secure>true</secure></cookie-config><tracking-mode>COOKIE</tracking-mode></session-config>
+</web-app>
